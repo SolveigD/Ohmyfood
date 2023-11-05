@@ -14,6 +14,7 @@
     --dark-green:#008766;
     --light-grey:#EAEAEA;
     --background-grey:#f6f6f6;
+    --medium-grey:#7E7E7E;
     --dark-grey:#353535;
     --white:#f3f3f3;
     --black:#000000;
@@ -146,5 +147,78 @@
     {
         margin-top:27px;
         margin-bottom:57px;
+    }
+
+    /*section fonctionnement*/
+
+    .section_about h2
+    {
+        font-size:24px;
+        margin-top:48px;
+        margin-left:20px;
+        margin-bottom:26px;
+    }
+    
+    .about_step
+    {
+        display: flex;
+        flex-direction: column;
+        gap:24px;
+    }
+
+    .about_step--rect
+    {
+        display: flex;
+        flex-direction: row;
+        margin-left:32.5px;
+        margin-right:20px;
+        gap:23px;
+    }
+    .number
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color:var(--white);
+        background-color:var(--main-color);
+        height: 24px;
+        width:24px;
+        border-radius: 15px;
+        margin-top: 25px;
+    margin-left: -12.5px;
+        
+    }
+
+    .about_step--rect{
+        background-color:var(--background-grey);
+        border-radius:20px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+    }
+
+    .about_step--rect p
+    {
+        margin-top:28px;
+        margin-bottom:28px;
+        font-size:16px;
+        font-weight:500;
+    }
+
+    .about_step--rect .fa-solid
+    {
+        color:var(--medium-grey);
+    }
+
+   .about_step--rect .fa-solid.fa-store
+   {
+    color:var(--main-color);
+   }
+
+    .number_icon
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
