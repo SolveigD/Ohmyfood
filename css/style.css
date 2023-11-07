@@ -275,7 +275,7 @@
         margin-left:251px;
 }
 
-    .card-content
+    .card_content
     {
         background-color:white;
         display: flex;
@@ -284,7 +284,7 @@
         border-radius: 0px 0px 15px 15px;
     }
 
-    .card-text
+    .card_text
     {
         margin-left:14px;
     }
@@ -305,7 +305,7 @@
         font-size:17px;
     }
 
-    .card-heart
+    .card_heart
     {
         display: flex;
         flex-direction: column;
