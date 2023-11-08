@@ -1,27 +1,17 @@
-:root{
+$main-color:#9356DC;
+$dark-black:#101010;
+$light-blue:#89C8FA;
+$dark-blue:#003A68;
+$light-green:#99E2D0;
+$dark-green:#008766;
+$light-grey:#EAEAEA;
+$background-grey:#f6f6f6;
+$medium-grey:#7E7E7E;
+$dark-grey:#353535;
+$white:#f3f3f3;
+$black:#000000;
 
-    /*colors*/
-
-    --main-color:#9356DC;
-    --dark-black:#101010;
-    --light-blue:#89C8FA;
-    --dark-blue:#003A68;
-    --light-green:#99E2D0;
-    --dark-green:#008766;
-    --light-grey:#EAEAEA;
-    --background-grey:#f6f6f6;
-    --medium-grey:#7E7E7E;
-    --dark-grey:#353535;
-    --white:#f3f3f3;
-    --black:#000000;
-    --button-gradient: #9356DC, #FF79DA; 
-
-    /*fonts*/
-
-    --body-font:'Roboto', sans-serif;
-
-    --logo-font:'Shrikhand', serif;
-    --logo-font-weight: 400;
-    --logo-font-size-mobile: 30px;
-
-}
+$body-font:'Roboto', sans-serif;
+$logo-font:'Shrikhand', serif;
+$logo-font-weight:400;
+$logo-font-size-mobile:30px;
