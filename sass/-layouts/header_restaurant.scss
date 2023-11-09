@@ -1,0 +1,33 @@
+
+@media (max-width: 767.98px) {
+
+    .header_restaurant
+    {
+        display: flex;
+        flex-direction: row;
+        gap:42px;
+
+        & .logo
+        {
+            padding-right:89px;
+            flex:1;
+        }
+
+        & .icone_arrow {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            & .fa-solid.fa-arrow-left{
+                color: $dark-grey;
+                width:30px;
+                height:30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left:17px;
+            }
+        }
+    }
+}

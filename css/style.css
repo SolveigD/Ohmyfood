@@ -30,6 +30,14 @@
   margin-bottom: 26px;
 }
 
+.logo {
+  font-family: "Shrikhand", serif;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 13px;
+}
+
 @media (max-width: 767.98px) {
   footer {
     background-color: #353535;
@@ -68,23 +76,10 @@
     margin-left: 0;
     margin-right: 0;
   }
-  header {
+  .header_accueil {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  header .logo {
-    font-family: "Shrikhand", serif;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 14px;
-    padding-bottom: 13px;
-  }
-  header p {
-    color: #353535;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 15px;
   }
   .location {
     display: flex;
@@ -102,6 +97,12 @@
     height: 16px;
     margin-right: 17px;
     color: #353535;
+  }
+  .location p {
+    color: #353535;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
   }
   /*section découvrez nos restaurants*/
   .section_discover {
@@ -280,6 +281,31 @@
     gap: 11px;
     font-size: 16px;
     font-weight: 500;
+  }
+}
+@media (max-width: 767.98px) {
+  .header_restaurant {
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+  }
+  .header_restaurant .logo {
+    padding-right: 89px;
+    flex: 1;
+  }
+  .header_restaurant .icone_arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header_restaurant .icone_arrow .fa-solid.fa-arrow-left {
+    color: #353535;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 17px;
   }
 }
 
