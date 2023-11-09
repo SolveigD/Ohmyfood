@@ -1,0 +1,27 @@
+.btn
+        {
+           
+            border-radius:25px;
+             @include gradient(bottom, $list);
+            color:$white;
+            @include shadowButton;
+            text-decoration:none;
+            padding-left:16px;
+            padding-right:16px;
+            padding-top:13px;
+            padding-bottom:13px;
+            font-size: 16px;
+            font-weight:500;
+            text-decoration:none;
+            text-align: center;
+            margin:auto;
+
+            & :hover{
+        
+                background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+        
+                @include shadowButtonHover;
+            }
+        }
+
+    

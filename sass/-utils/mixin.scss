@@ -1,0 +1,30 @@
+$list: $main-color -11.44%, $pink 123.97%;
+
+@mixin gradient($direction, $list){
+  background:-webkit-linear-gradient($direction, $list);
+  }
+
+
+@mixin shadowButton
+  {
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+
+@mixin shadowButtonHover
+  {
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  }  
+
+
+  @mixin shadowRect
+{
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+@mixin shadowCard
+{
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+}
+
+
