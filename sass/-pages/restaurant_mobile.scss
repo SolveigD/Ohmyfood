@@ -1,6 +1,47 @@
 
 @media (max-width: 767.98px) {
 
+body{
+    position:fixed;
+    overflow: hidden;
+}
 
+    /*image header*/
+
+.header_img{
+    background-image:url('../img/restaurants_menu/lapalettedugout.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:275px;
+}
+
+/*section entrée*/
+
+.section_entrees
+{
+    background-color: $white;
+    width:auto;
+    margin-top:-32px;
+    border-radius:25px 25px 0px 0px;
+
+    & .title_content
     
+    {
+        display: flex;
+        flex-direction: row;
+        padding-left:17px;
+        padding-right:17px;
+    
+        & .card_heart{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left:24px;
+            padding-right:28px;
+    
+        }
+    }
+}
+
+
 }

@@ -3,9 +3,33 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.title_h1_restaurant
+{
+    font-family: $title-h1-font;
+    font-size:$title-h1-font-size;
+    margin-bottom:0px;
+}
+
 .title_h2
 {
-    font-size:24px;
+    font-size:$title-h2-font-size;
     margin-left:20px;
     margin-bottom:26px;
+}
+
+.title_h3_restaurant
+{
+    font-size:$title-h3-font-size;
+    font-weight:$font-weight-thin;
+    margin-left:13px;
+    margin-bottom:0;
+}
+
+.green_line{
+    width:40px;
+    height:3px;
+    background-color: $light-green;
+    margin-left:13px;
+    margin-top:9px;
+    margin-bottom:12px;
 }

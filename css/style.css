@@ -24,10 +24,32 @@
   font-family: "Roboto", sans-serif;
 }
 
+.title_h1_restaurant {
+  font-family: "Shrikhand", serif;
+  font-size: 28px;
+  margin-bottom: 0px;
+}
+
 .title_h2 {
   font-size: 24px;
   margin-left: 20px;
   margin-bottom: 26px;
+}
+
+.title_h3_restaurant {
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 13px;
+  margin-bottom: 0;
+}
+
+.green_line {
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin-left: 13px;
+  margin-top: 9px;
+  margin-bottom: 12px;
 }
 
 .logo {
@@ -281,6 +303,39 @@
     gap: 11px;
     font-size: 16px;
     font-weight: 500;
+  }
+}
+@media (max-width: 767.98px) {
+  body {
+    position: fixed;
+    overflow: hidden;
+  }
+  /*image header*/
+  .header_img {
+    background-image: url("../img/restaurants_menu/lapalettedugout.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 275px;
+  }
+  /*section entrée*/
+  .section_entrees {
+    background-color: #f3f3f3;
+    width: auto;
+    margin-top: -32px;
+    border-radius: 25px 25px 0px 0px;
+  }
+  .section_entrees .title_content {
+    display: flex;
+    flex-direction: row;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  .section_entrees .title_content .card_heart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+    padding-right: 28px;
   }
 }
 @media (max-width: 767.98px) {
