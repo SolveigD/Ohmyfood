@@ -21,7 +21,6 @@
 {
     font-size:$title-h3-font-size;
     font-weight:$font-weight-thin;
-    margin-left:13px;
     margin-bottom:0;
 }
 
@@ -29,7 +28,22 @@
     width:40px;
     height:3px;
     background-color: $light-green;
-    margin-left:13px;
     margin-top:9px;
-    margin-bottom:12px;
+}
+
+.title_h4{
+    font-size:18px;
+    font-weight:$font-weight-medium;
+}
+
+.subtitle_card_meal
+{
+    font-size:15px;
+    font-weight:$font-weight-thin;
+}
+
+.card_price
+{
+    font-size:15px;
+    font-weight: $font-weight-bold;
 }
