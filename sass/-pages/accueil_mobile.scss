@@ -11,40 +11,16 @@
      display: flex;
      flex-direction: column;
      justify-content: center;
+
+        & .logo_mobile{
+            display:block;
+        }
+
+        & .logo_desktop{
+            display:none;
+        }
      }
  
-     .location
-     {
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         background-color: $light-grey;
- 
-         & .location_icon
-         {
-             display: flex;
-             flex-direction: column;
-             justify-content: center;
-         
-             & .fa-location-dot
-             {
-                 width:12px;
-                 height:16px;
-                 margin-right:17px;
-                 color:$dark-grey;
-             }
-         
-         }
-
-         & p{
-            color:$dark-grey;
-            font-size:16px;
-            font-weight:500;
-            margin-top:15px;
-        }
- 
-    }
-   
      
  
      /*section découvrez nos restaurants*/
