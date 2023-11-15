@@ -88,21 +88,7 @@
                  width:auto;
                  @include shadowRect;
  
-                 & .number
-                 {
-                     display: flex;
-                     flex-direction: column;
-                     justify-content: center;
-                     align-items: center;
-                     color:$white;
-                     background-color:$main-color;
-                     height: 24px;
-                     width:24px;
-                     border-radius: 15px;
-                     margin-top: 25px;
-                 margin-left: -12.5px;
-                     
-                 }
+                
  
                  & p{
                      margin-top:28px;
@@ -110,22 +96,7 @@
                      font-size:16px;
                      font-weight:500;
                  }
- 
-                 & .fa-solid{
-                     color:$medium-grey;
-                 }
- 
-                 & .fa-solid.fa-store
-                 {
-                  color:$main-color;
-                 }
- 
-                 & .number_icon
-                 {
-                     display: flex;
-                     flex-direction: column;
-                     justify-content: center;
-                 }
+                 
              }
          }
  
@@ -138,6 +109,8 @@
          background: $background-grey;
          padding-top:54px;
          padding-bottom:66px;
+         padding-left:0px;
+         padding-right:0px;
  
         & .title_h2{
             margin-left:20px;
@@ -146,18 +119,22 @@
              display: flex;
              flex-direction: column;
              gap:18px;
+            
+         
      
              & .card {
                  display: flex;
                  flex-direction: column;
                  justify-content: center;
                  margin: auto;
+                 width:auto;
                  border-radius:15px;
-                 width:340px;
+              
+                
                  @include shadowCard;
          
                  & .img_restaurant--accueil{
-                     max-height:231px;
+                     height:174px;
                      max-width:340px;
                      border-radius:15px 15px 0px 0px;
              
