@@ -89,4 +89,80 @@ body{
     
 
 }
+
+  /*section fonctionnement*/
+ 
+  .section_about
+  {
+      padding-top:50px;
+      padding-bottom:50px;
+      padding-left:180px;
+      padding-right:180px;
+
+
+      & .title_h2
+      {
+          font-size:$title-h2-font-size;
+          margin-left:0px;
+          margin-bottom:25px;
+      }
+
+      & .about_step
+      {
+          display: flex;
+          flex-direction: row;
+          gap:36.5px;
+      
+          & .about_step--rect
+          {
+              display: flex;
+              flex-direction: row;
+              gap:23px;
+              background-color:$background-grey;
+              border-radius:20px;
+              width:100%;
+              @include shadowRect;
+
+              & .number
+              {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  color:$white;
+                  background-color:$main-color;
+                  height: 24px;
+                  width:24px;
+                  border-radius: 15px;
+                  margin-top: 25px;
+              margin-left: -12.5px;
+                  
+              }
+
+              & p{
+                  margin-top:28px;
+                  margin-bottom:28px;
+                  font-size:16px;
+                  font-weight:500;
+              }
+
+              & .fa-solid{
+                  color:$medium-grey;
+              }
+
+              & .fa-solid.fa-store
+              {
+               color:$main-color;
+              }
+
+              & .number_icon
+              {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+              }
+          }
+      }
+
+  }
   

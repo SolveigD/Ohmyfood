@@ -62,8 +62,14 @@
      {
          padding-top:48px;
          padding-bottom:68px;
+         padding-left: 0px;
+         padding-right:0px;
  
- 
+        & .title_h2
+        {
+            margin-left:20px;
+            margin-bottom:26px;
+        }
          & .about_step
          {
              display: flex;
@@ -79,6 +85,7 @@
                  gap:23px;
                  background-color:$background-grey;
                  border-radius:20px;
+                 width:auto;
                  @include shadowRect;
  
                  & .number
@@ -132,7 +139,9 @@
          padding-top:54px;
          padding-bottom:66px;
  
- 
+        & .title_h2{
+            margin-left:20px;
+        }
          & .card_restaurant{
              display: flex;
              flex-direction: column;
