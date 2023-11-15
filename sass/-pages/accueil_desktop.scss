@@ -22,7 +22,7 @@ body{
     }
     }
 
-    /*section discover*/
+    /*section location*/
    
     .location
     {
@@ -55,4 +55,38 @@ body{
        }
 
    }
+
+   /*section discover*/
+
+   .section_discover{
+    display: flex;
+    flex-direction: column;
+    background-color:$background-grey;
+
+    & h1{
+        font-size: 40px;
+        font-weight:700;
+        text-align: center;
+        margin-top:30px;
+        margin-bottom:0;
+    }
+
+    & p{
+
+        color:$dark-grey;
+        font-size:18px;
+        font-weight:$font-weight-thin;
+        text-align:center;
+        margin:auto;
+        margin-top:18px;
+    }
+
+    & .btn_discover{
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+
+    
+
+}
   
