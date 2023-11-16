@@ -43,7 +43,13 @@ footer{
         }
 }
 
-
+@media (min-width : 768px) and (max-width : 1024px){
+        footer{
+            padding-left:0;
+            padding-right:0;
+            justify-content: center;
+        }
+}
 
 @media (max-width: 767.98px) {
     footer{
