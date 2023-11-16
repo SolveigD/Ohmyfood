@@ -1,16 +1,15 @@
 
-@media (max-width: 767.98px) {
-
-    .header_restaurant
+.header_restaurant
     {
         display: flex;
         flex-direction: row;
-        gap:42px;
+        gap:572px;
+        padding-top:30;
+        padding-bottom:32px;
 
-        & .logo
+        & .logo_mobile
         {
-            padding-right:89px;
-            flex:1;
+            display:none;
         }
 
         & .icone_arrow {
@@ -29,5 +28,28 @@
                 padding-left:17px;
             }
         }
+    }
+
+@media (max-width: 767.98px) {
+
+    .header_restaurant
+    {
+    
+        gap:42px;
+        padding-top:0;
+        padding-bottom:0;
+
+        & .logo_desktop{
+            display:none;
+        }
+        
+        & .logo_mobile
+        {
+            padding-right:89px;
+            flex:1;
+            display:block;
+        }
+
+       
     }
 }
