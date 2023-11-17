@@ -470,33 +470,6 @@ body {
     margin-left: 360px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1439.5px) {
-  .section_about {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 180px;
-    padding-right: 180px;
-  }
-  .section_about .about_step {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023.5px) {
-  .section_about {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 180px;
-    padding-right: 180px;
-  }
-  .section_about .about_step {
-    display: flex;
-    flex-direction: column;
-  }
-  .section_restaurant .card_restaurant .card .text_img--nouveau {
-    margin-left: 360px;
-  }
-}
 @media (max-width: 767.9px) {
   body {
     margin: 0;
