@@ -248,6 +248,11 @@ body{
                     flex-direction: column;
                     justify-content: center;
                     margin-right:25px;
+                    
+                    & .container_heart{
+                        width: 22px;
+                        height: 21px;
+                    }
                 }
             }
         }

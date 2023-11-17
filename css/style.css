@@ -361,6 +361,10 @@ body {
   justify-content: center;
   margin-right: 25px;
 }
+.section_restaurant .card_restaurant .card .card_content .card_heart .container_heart {
+  width: 22px;
+  height: 21px;
+}
 
 .header_img {
   background-image: url("../img/restaurants_menu/lapalettedugout_desktop.jpg");
@@ -705,6 +709,38 @@ body {
     padding-right: 89px;
     flex: 1;
     display: block;
+  }
+}
+.container_heart {
+  position: relative;
+}
+.container_heart .empty_heart, .container_heart .full_heart {
+  position: absolute;
+}
+.container_heart .empty_heart {
+  opacity: 1;
+}
+.container_heart .full_heart {
+  opacity: 0;
+}
+.container_heart:hover .empty_heart {
+  transition: opacity 300ms ease;
+  opacity: 0;
+}
+.container_heart:hover .full_heart {
+  transition: opacity 300ms ease;
+  opacity: 1;
+}
+
+/*animations mobile*/
+@media (max-width: 767.9px) {
+  .container_heart:active .empty_heart {
+    transition: opacity 300ms ease;
+    opacity: 0;
+  }
+  .container_heart:active .full_heart {
+    transition: opacity 300ms ease;
+    opacity: 1;
   }
 }
 

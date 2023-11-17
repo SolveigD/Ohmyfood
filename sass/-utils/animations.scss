@@ -1,0 +1,50 @@
+.container_heart
+{
+    position: relative;
+   
+    & .empty_heart, .full_heart{
+        position:absolute;
+    }
+
+    & .empty_heart{
+        opacity: 1;
+    }
+
+    & .full_heart{
+        opacity:0;
+    }
+
+    &:hover{
+        & .empty_heart
+        {
+          transition:opacity 300ms ease;
+          opacity:0;
+        }
+
+        & .full_heart{
+            transition:opacity 300ms ease;
+            opacity : 1;
+        }
+
+    }
+
+}
+
+/*animations mobile*/
+@media (max-width: 767.9px) {
+    .container_heart{
+        &:active{
+            & .empty_heart
+            {
+              transition:opacity 300ms ease;
+              opacity:0;
+            }
+    
+            & .full_heart{
+                transition:opacity 300ms ease;
+                opacity : 1;
+            } 
+        }
+    }
+
+}
