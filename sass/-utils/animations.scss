@@ -1,9 +1,73 @@
+
+
+/*animation loader*/
+.loader {
+    background-color:white;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0; left: 0;
+      display: flex;
+      align-items: center;
+      align-content: center; 
+      justify-content: center;  
+      z-index: 100000;
+      animation: fadeOut 4s ease-out forwards;
+    
+      
+      & .loader__1, .loader__2, .loader__3 {
+         border-radius: 100%;
+        width:$size;
+        height:$size;
+        margin: $size * 0.8;
+        @include gradient(bottom, $list);
+          
+    
+                &.loader__1 {
+                animation: preloader .6s ease-in-out alternate infinite;
+                }
+        
+                 &.loader__2 {
+                animation: preloader .6s ease-in-out alternate .2s infinite;
+                }
+    
+                &.loader__3 {
+                animation: preloader .6s ease-in-out alternate .4s infinite ;
+                }
+            }
+    }
+    
+    @keyframes preloader {
+       
+      100% 
+      { 
+        transform: scale(2); 
+        }
+    }
+    
+    @keyframes fadeOut {
+      0% { 
+        opacity: 1; 
+        }
+      90%{
+        opacity:1;
+        }
+      100% { 
+        opacity: 0; display: none; 
+    }
+    }
+    
+
+
+/*animation coeur*/
+
 .container_heart
 {
     position: relative;
    
     & .empty_heart, .full_heart{
-        position:absolute;
+        position: absolute;
     }
 
     & .empty_heart{
@@ -17,12 +81,12 @@
     &:hover{
         & .empty_heart
         {
-          transition:opacity 300ms ease;
+          transition: opacity 300ms ease;
           opacity:0;
         }
 
         & .full_heart{
-            transition:opacity 300ms ease;
+            transition: opacity 300ms ease;
             opacity : 1;
         }
 
