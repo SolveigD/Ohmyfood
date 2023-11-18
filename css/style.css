@@ -16,7 +16,7 @@
   margin: auto;
 }
 .btn.btn:hover {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+  opacity: 0.9;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
@@ -711,6 +711,57 @@ body {
     display: block;
   }
 }
+/*animation loader*/
+.loader {
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  z-index: 100000;
+  animation: fadeOut 4s ease-out forwards;
+}
+.loader .loader__1, .loader .loader__2, .loader .loader__3 {
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  margin: 8px;
+  background: -webkit-linear-gradient(bottom, #9356DC -11.44%, #FF79DA 123.97%);
+}
+.loader .loader__1.loader__1, .loader .loader__2.loader__1, .loader .loader__3.loader__1 {
+  animation: preloader 0.6s ease-in-out alternate infinite;
+}
+.loader .loader__1.loader__2, .loader .loader__2.loader__2, .loader .loader__3.loader__2 {
+  animation: preloader 0.6s ease-in-out alternate 0.2s infinite;
+}
+.loader .loader__1.loader__3, .loader .loader__2.loader__3, .loader .loader__3.loader__3 {
+  animation: preloader 0.6s ease-in-out alternate 0.4s infinite;
+}
+
+@keyframes preloader {
+  100% {
+    transform: scale(2);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+/*animation coeur*/
 .container_heart {
   position: relative;
 }

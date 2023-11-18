@@ -16,12 +16,12 @@
       animation: fadeOut 4s ease-out forwards;
     
       
-      & .loader__1, .loader__2, .loader__3 {
-         border-radius: 100%;
-        width:$size;
-        height:$size;
-        margin: $size * 0.8;
-        @include gradient(bottom, $list);
+        & .loader__1, .loader__2, .loader__3 {
+            border-radius: 100%;
+            width:$size;
+            height:$size;
+            margin: $size * 0.8;
+            @include gradient(bottom, $list);
           
     
                 &.loader__1 {
