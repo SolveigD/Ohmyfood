@@ -381,6 +381,10 @@ body {
   background-image: url("../img/restaurants_menu/ledelicedessens_desktop.jpg");
 }
 
+.header_img_lanote {
+  background-image: url("../img/restaurants_menu/ledelicedessens_desktop.jpg");
+}
+
 .section_menu {
   background-color: #f3f3f3;
   width: auto;
@@ -688,6 +692,9 @@ body {
   }
   .header_img_ledelice {
     background-image: url("../img/restaurants_menu/ledelicedessens.jpg");
+  }
+  .header_img_lanote {
+    background-image: url("../img/restaurants_menu/lanoteenchantee.jpg");
   }
   /*section entrée*/
   .section_menu {
