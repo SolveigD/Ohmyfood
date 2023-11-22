@@ -179,7 +179,10 @@ body{
         flex-wrap: wrap;
         row-gap: 50px;
         column-gap: 100px;
-
+        & .link_menu{
+            display:contents;
+            color:$black;
+        }
         & .card {
             display: flex;
             flex-direction: column;

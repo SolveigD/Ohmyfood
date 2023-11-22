@@ -303,6 +303,10 @@ body {
   row-gap: 50px;
   column-gap: 100px;
 }
+.section_restaurant .card_restaurant .link_menu {
+  display: contents;
+  color: #000000;
+}
 .section_restaurant .card_restaurant .card {
   display: flex;
   flex-direction: column;
