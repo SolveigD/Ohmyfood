@@ -50,6 +50,7 @@
             flex-direction: row;
             justify-content: space-between;
             padding:15px;
+            padding-right: 0px;
             background-color: $light-white;
             border-radius:15px;
             box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
@@ -59,6 +60,8 @@
                 display: flex;
                 flex-direction: column;
                 gap:5px;
+                white-space: nowrap;
+                overflow: hidden;
 
                 & .title_h4{
                     margin-top:0;
@@ -71,6 +74,43 @@
                     padding-bottom:0;
                 }
 
+                & .title_h4, & .subtitle_card_meal {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+            }
+
+            & .card_price {
+                display: flex;
+
+                & .price {
+                    margin: auto 15px;
+                }
+
+                & .checkmark{
+                    width: 0px;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    overflow: hidden;
+                    transition: width 1s ease;
+                    background: #99E2D0;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 15px 0;
+                    margin-top: -15px;
+                    border-radius: 0 15px 15px 0;
+
+                    i {
+                        color: white;
+                    }
+                }
+            }
+
+            &:hover .checkmark{
+                transition: width 1s ease;
+                width: 59px;
             }
         }
     }

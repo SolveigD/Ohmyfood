@@ -59,6 +59,32 @@
     }
     
 
+    @keyframes fadeIn{
+        0%{opacity : 0%;}
+        100%{opacity: 100%;}
+      }
+      
+      .container_menu{
+        opacity:0;
+        animation : fadeIn .1s .1s forwards;
+        
+      & .entrees{
+        opacity:0;
+        animation : fadeIn 1s 1s forwards;
+  
+      }
+      
+      & .plats{
+        opacity:0;
+        animation : fadeIn 1s 2s forwards;
+      }
+      
+      & .desserts{
+        opacity:0;
+        animation : fadeIn 1s 3s forwards;
+      }
+        
+      }
 
 /*animation coeur*/
 

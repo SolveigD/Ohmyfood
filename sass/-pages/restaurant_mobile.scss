@@ -40,6 +40,15 @@
     
 }
 
+.card_price {
+   
+
+    &:active .checkmark{
+        transition: width 1s ease;
+        width: 59px;
+    }
+}
+
 /*section order*/
 
 .section_order{

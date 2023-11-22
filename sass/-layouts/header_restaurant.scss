@@ -1,55 +1,57 @@
+.header_restaurant {
+    display: flex;
+    flex-direction: row;
+    gap:572px;
+    padding-top:30;
+    padding-bottom:32px;
 
-.header_restaurant
-    {
+    & .return_link {
+        text-decoration: none;
+        
+    }
+
+    & .logo_mobile {
+        display:none;
+    }
+
+    & .icone_arrow {
+        
         display: flex;
-        flex-direction: row;
-        gap:572px;
-        padding-top:30;
-        padding-bottom:32px;
+        flex-direction: column;
+        justify-content: center;
 
-        & .logo_mobile
-        {
-            display:none;
-        }
-
-        & .icone_arrow {
-            
+        & .fa-solid.fa-arrow-left {
+            color: $dark-grey;
+            width:30px;
+            height:30px;
             display: flex;
             flex-direction: column;
             justify-content: center;
-
-            & .fa-solid.fa-arrow-left{
-                color: $dark-grey;
-                width:30px;
-                height:30px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding-left:17px;
-            }
+            padding-left:17px;
         }
     }
+}
 
 @media (max-width: 767.98px) {
 
-    .header_restaurant
-    {
-    
+    .header_restaurant {
         gap:42px;
         padding-top:0;
         padding-bottom:0;
 
-        & .logo_desktop{
+        & .return_link {
+          
+            margin: auto;
+        }
+
+        & .logo_desktop {
             display:none;
         }
         
-        & .logo_mobile
-        {
+        & .logo_mobile {
             padding-right:89px;
             flex:1;
             display:block;
         }
-
-       
     }
 }
