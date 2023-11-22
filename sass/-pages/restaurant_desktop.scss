@@ -1,11 +1,20 @@
 .header_img{
-    background-image:url('../img/restaurants_menu/lapalettedugout_desktop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height:390px;
+}
+
+
+.header_img_lapalette{
+    background-image:url('../img/restaurants_menu/lapalettedugout_desktop.jpg');
   
 }
+
+.header_img_ledelice{
+    background-image: url('../img/restaurants_menu/ledelicedessens_desktop.jpg');
+}
+
 
 .section_menu{
     background-color: $white;

@@ -367,11 +367,18 @@ body {
 }
 
 .header_img {
-  background-image: url("../img/restaurants_menu/lapalettedugout_desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 390px;
+}
+
+.header_img_lapalette {
+  background-image: url("../img/restaurants_menu/lapalettedugout_desktop.jpg");
+}
+
+.header_img_ledelice {
+  background-image: url("../img/restaurants_menu/ledelicedessens_desktop.jpg");
 }
 
 .section_menu {
@@ -672,10 +679,15 @@ body {
 @media (max-width: 767.98px) {
   /*image header*/
   .header_img {
-    background-image: url("../img/restaurants_menu/lapalettedugout.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 275px;
+  }
+  .header_img_lapalette {
+    background-image: url("../img/restaurants_menu/lapalettedugout.png");
+  }
+  .header_img_ledelice {
+    background-image: url("../img/restaurants_menu/ledelicedessens.jpg");
   }
   /*section entrée*/
   .section_menu {
@@ -712,12 +724,14 @@ body {
 .header_restaurant {
   display: flex;
   flex-direction: row;
-  gap: 572px;
   padding-top: 30;
   padding-bottom: 32px;
 }
 .header_restaurant .return_link {
   text-decoration: none;
+}
+.header_restaurant .logo_desktop {
+  margin: auto;
 }
 .header_restaurant .logo_mobile {
   display: none;
