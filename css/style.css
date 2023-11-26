@@ -104,6 +104,10 @@ footer p {
   font-weight: 400;
   margin: 0;
 }
+footer p a {
+  text-decoration: none;
+  color: white;
+}
 footer .icone_footer {
   color: white;
   display: flex;
